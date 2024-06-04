@@ -8,8 +8,14 @@
     font-family: "Roboto", sans-serif;
     list-style: none;
 }
+:root{
+    --orange : #f17c0e;
+}
 html{
     font-size: 62.5%;
+}
+body{
+    background-color: #000;
 }
 #sample{
     height: 100vh;
@@ -31,7 +37,7 @@ p{
     justify-content: center;
     padding: 0 3rem;
     height: 8rem;
-    width: 100vw;
+    width: 100%;
     border: 1px solid #fff;
 }
 .navbar{
@@ -175,6 +181,170 @@ p{
     margin: 2.5rem 0;
     font-size: 1.7rem;
 }
+/* Features */
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+.features-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    margin: 6rem;
+}
+.features-header h1{
+    font-size: 4rem;
+}
+.features{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 350px;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    margin: 2rem;
+}
+.features-box i{
+    font-size: 3rem;
+    background-color: var(--orange);
+    color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features-box h1{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.features-box p{
+    margin: 2rem 0;
+    height: 80px;
+}
+.btn{
+    font-size: 1.9rem;
+    color: var(--orange);
+    font-weight: 700;
+    border-radius: 3rem;
+    border: 2px solid var(--orange);
+    transition: all .3s ease;
+    padding: 1.1rem 3rem;
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+/* Faq */
+#faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+.faq-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2.5rem 0;
+    color: #fff;
+    padding: 0 2rem;
+}
+.faq-header h1{
+    font-size: 6rem;
+}
+.faq-header p{
+    margin-top: 2rem;
+}
+.faq{
+    width: 850px;
+    color: #fff;
+}
+.faq-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.faq-menu li{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+.faq-menu li:hover {
+    color: #dfdfdf;
+}
+.faq-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 7rem;
+    border-bottom: 1px solid #fefefe;
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+.faq-main i{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+.faq-drop{
+    text-align: left;
+    font-size: 1.7rem;
+    padding: 2.5rem 1rem;
+    margin-bottom: 3rem;
+    display: none;
+}
+.faq-menu li.active .faq-main{
+    background-color: #f17c0e;
+}
+.faq-menu li.active .faq-drop{
+    display: inherit;
+}
+@media screen and (max-width:1000px) {
+
+    .hero-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+        width: 56rem;
+        margin-top: 0;
+    }
+    .hero-main h1{
+        font-size: 5rem;
+    }
+    .faq {
+        width: 85%;
+        color: #fff;
+    }
+}
 @media screen and (max-width:900px) {
     .hamburger{
         display: inherit;
@@ -201,22 +371,7 @@ p{
         width: 90%;
     }
 }
-@media screen and (max-width:1000px) {
 
-    .hero-main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #fff;
-        text-align: center;
-        width: 56rem;
-        margin-top: 0;
-    }
-    .hero-main h1{
-        font-size: 5rem;
-    }
-}
 @media screen and (max-width:700px) {
     .hero-main h1{
         font-size: 4rem;
@@ -234,5 +389,18 @@ p{
     }
     .navbar {
         width: 95%;
+    }
+    .features-header h1 {
+        font-size: 3rem;
+    }
+    .features-box {
+        width: 90%;
+    }
+    .faq-header h1{
+        font-size: 3rem;
+    }
+    .faq {
+        width: 90%;
+        color: #fff;
     }
 }
