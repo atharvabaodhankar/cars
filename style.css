@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    list-style: none;
 }
 :root{
     --orange : #f17c0e;
@@ -49,6 +48,7 @@ p{
 }
 .navigators{
     display: flex;
+    list-style: none;
 }
 .navigators li{
     margin: 0 1.5rem;
@@ -284,6 +284,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    list-style: none;
 }
 .faq-menu li{
     width: 100%;
@@ -325,6 +326,39 @@ p{
 .faq-menu li.active .faq-drop{
     display: inherit;
 }
+/* Best */
+#best{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem 0;
+    color: #fff;
+}
+.best-left{
+    text-align: left;
+    width: 500px;
+    padding: 0 2rem;
+}
+.best-left h1{
+    font-size: 3.5rem;
+}
+.best-left p{
+    margin-top: 2rem;
+}
+.best-right{
+    text-align: left;
+    width: 500px;
+    padding: 4rem 4rem;
+    background-color: var(--orange);
+}
+.best-right h1{
+    font-size: 2rem;
+}
+
+.best-right ol li{
+    margin: 2rem 0;
+    font-size: 1.6rem;
+}
 @media screen and (max-width:1000px) {
 
     .hero-main {
@@ -343,6 +377,17 @@ p{
     .faq {
         width: 85%;
         color: #fff;
+    }
+    #best{
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-left{
+        width: 80%;
+    }
+    .best-right{
+        width: 80%;
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width:900px) {
@@ -402,5 +447,14 @@ p{
     .faq {
         width: 90%;
         color: #fff;
+    }
+    .best-left h1{
+        font-size: 2rem;
+    }
+    .best-left{
+        width: 90%;
+    }
+    .best-right{
+        width: 90%;
     }
 }
