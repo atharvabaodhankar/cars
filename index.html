@@ -194,31 +194,27 @@
         </ol>
       </div>
     </section>
+    <section id="showcase">
+      <div class="showcase-box">
+        <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/a1ed9bb2bc0954a2a9c483e7/pexels-photo-1231643.jpeg" alt="">
+      </div> 
+      <div class="showcase-box">
+        <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/9c15421e79a15ce6b2230237/pexels-photo-1586141.jpeg" alt="">
+      </div>
+      <div class="showcase-box">
+        <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg" alt="">
+      </div>
+      <div class="showcase-over">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="showcase-over-box">
+          <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/a1ed9bb2bc0954a2a9c483e7/pexels-photo-1231643.jpeg" alt="">
+        </div>
+      </div>
+    </section>
     <section id="sample"></section>
-    <script>
-      var hamburger = document.querySelector(".hamburger");
-      var menu = document.querySelector(".navigators");
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        menu.classList.toggle("active");
-      });
-
-      var faqBar = document.querySelectorAll(".faq-menu li");
-     
-      faqBar.forEach((li) => {
-        li.addEventListener("click", () => {
-
-          if (li.classList.contains("active")) {
-            li.classList.remove("active");
-          } else {
-            faqBar.forEach((ele) => {
-              ele.classList.remove("active");
-            });
-            li.classList.add("active");
-          }
-        });
-        
-      });
-    </script>
+   <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
