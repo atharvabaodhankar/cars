@@ -412,6 +412,62 @@ p{
     top: 3rem;
     right: 3rem;
 }
+/* Companies */
+#companies{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.companies{
+    width: 1200px;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    min-width: 400px;
+}
+#companies h1{
+    justify-self: flex-start;
+    font-size: 6rem;
+    width: 50%;
+}
+#companies h2{
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 4rem;
+}
+#companies h2 span{
+    color: var(--orange);
+}
+/* Ride */
+#ride{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.ride{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ride-img {
+    width: 60vw;
+}
+.ride-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ride-text{
+    margin-left: 4rem;
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: right;
+    font-weight: 700;
+    padding: 0 2rem;
+}
 @media screen and (max-width:1000px) {
 
     .hero-main {
@@ -442,6 +498,12 @@ p{
         width: 80%;
         margin-top: 3rem;
     }
+    .ride{
+        flex-direction: column;
+    }
+    .ride-img{
+        width: 80%;
+    }
 }
 @media screen and (max-width:900px) {
     .hamburger{
@@ -468,6 +530,10 @@ p{
     .navbar{
         width: 90%;
     }
+    #companies h1 {
+        font-size: 5rem;
+        width: 78%;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -476,6 +542,19 @@ p{
     }
     .hero-main{
         width: 80%;
+    }
+    .companies {
+        gap: 10rem;
+    }
+    #companies h1 {
+        font-size: 4rem;
+        width: 85%;
+    }
+    #companies h2{
+        font-size: 3rem;
+    }
+    .ride-text {
+        font-size: 3rem;
     }
 }
 @media screen and (max-width:500px) {
@@ -512,5 +591,14 @@ p{
     }
     .showcase-box{
         width: 90%;
+    }
+    .companies {
+        min-width: 90%;
+    }
+    #companies h1 {
+        font-size: 3.3rem;
+    }
+    #companies h2 {
+        font-size: 2.4rem;
     }
 }
