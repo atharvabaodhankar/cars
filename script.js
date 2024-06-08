@@ -45,3 +45,21 @@ showBox.forEach((ele)=>{
     showOverImg.src = ele.getAttribute("src");
   })
 })
+
+var InsuranceImg = document.querySelector(".insurance-img");
+var Icursor = document.querySelector(".i-cursor");
+
+InsuranceImg.addEventListener("mousemove", (dets) => {
+  Icursor.style.opacity = 1;
+  Icursor.style.left = dets.x + "px";
+  Icursor.style.top = dets.y + "px";
+  gsap.from(Icursor, {
+    ease: "expo.out",
+    duration : 1,
+  })
+})
+InsuranceImg.addEventListener("mouseleave", (dets) => {
+  Icursor.style.opacity = 0;
+})
+
+

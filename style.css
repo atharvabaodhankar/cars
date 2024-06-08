@@ -26,7 +26,7 @@ p{
 /* Hero */
 #hero{
     height: 100vh;
-    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg);
+    background:linear-gradient(#0000002b,#ab65239a), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -468,6 +468,68 @@ p{
     font-weight: 700;
     padding: 0 2rem;
 }
+/* Insurancer */
+#insurance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.insurance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    gap: 2rem;
+    width: 550px;
+    padding: 0 3rem;
+}
+.insurance h1{
+    font-size: 4rem;
+}
+.insurance h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 400 ;
+    line-height: 3rem;
+}
+.insurance p:last-child{
+    background-color: transparent;
+}
+.insurance > p{
+    font-size: 1.7rem;
+    background-color: var(--orange);
+    padding: 1rem;
+}
+.insurance-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 4rem;
+    position: relative;
+}
+.insurance-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.i-cursor{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 100;
+    mix-blend-mode: difference;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: all .2s ease;
+}
+
 @media screen and (max-width:1000px) {
 
     .hero-main {
@@ -504,6 +566,16 @@ p{
     .ride-img{
         width: 80%;
     }
+    .insurance {
+        width: 400px;
+    }
+    .insurance-img {
+        width: 400px;
+        height: 400px;
+    }
+    .insurance h1 {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width:900px) {
     .hamburger{
@@ -533,6 +605,18 @@ p{
     #companies h1 {
         font-size: 5rem;
         width: 78%;
+    }
+    #insurance{
+        flex-direction: column;
+    }
+    .insurance{
+        width: 90%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .insurance-img{
+        margin: 0;
+        margin-top: 5rem;
     }
 }
 
@@ -600,5 +684,15 @@ p{
     }
     #companies h2 {
         font-size: 2.4rem;
+    }
+    .insurance-img {
+        width: 250px;
+        height: 250px;
+    }
+    .insurance {
+        width: 100%;
+    }
+    .insurance h1 {
+        font-size: 2.3rem;
     }
 }
