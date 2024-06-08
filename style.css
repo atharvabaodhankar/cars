@@ -26,7 +26,7 @@ p{
 /* Hero */
 #hero{
     height: 100vh;
-    background:linear-gradient(#0000002b,#ab65239a), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg);
+    background:linear-gradient(#0000002b,#ab652363), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg);
     background-size: cover;
     background-position: center;
 }
