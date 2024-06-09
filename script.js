@@ -46,20 +46,24 @@ showBox.forEach((ele)=>{
   })
 })
 
-var InsuranceImg = document.querySelector(".insurance-img");
-var Icursor = document.querySelector(".i-cursor");
-
-InsuranceImg.addEventListener("mousemove", (dets) => {
-  Icursor.style.opacity = 1;
-  Icursor.style.left = dets.x + "px";
-  Icursor.style.top = dets.y + "px";
-  gsap.from(Icursor, {
-    ease: "expo.out",
-    duration : 1,
-  })
-})
-InsuranceImg.addEventListener("mouseleave", (dets) => {
-  Icursor.style.opacity = 0;
-})
-
+if (window.matchMedia("(min-width: 768px)").matches) 
+{
+  
+  Shery.mouseFollower();
+  
+  Shery.imageMasker(".showcase-box" , {
+    mouseFollower: true,
+    text: "Click Here",
+  });
+  Shery.imageMasker(".insurance-img" , {
+    mouseFollower: true,
+    text: "Get Now",
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+  }
+Shery.makeMagnet(".ride-img" , {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
 
