@@ -902,6 +902,7 @@ form .btn {
         flex-direction: column;
         padding: 2.5rem 4rem;
         align-items: center;
+        z-index: 400;
     }
 
     .navigators.active {
