@@ -74,7 +74,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     color: #fff;
 }
 
@@ -126,7 +126,7 @@ p {
     left: 0;
     right: 0;
     height: 4px;
-    border-radius: calc(4px / 2);
+    /* border-radius: calc(4px / 2); */
     background: #fff;
     color: inherit;
     opacity: 1;
